@@ -7,7 +7,7 @@
 <script>
     import router from './router'
     import store from './store'
-    import Home from './view/Home.vue'
+    import Home from 'view/Home.vue'
 
     export default {
         name: 'App',

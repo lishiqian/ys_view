@@ -6,6 +6,7 @@ import Vue from 'vue'
 
 //路由懒加载
 const WeaponList = () => import('@/view/weapon/WeaponList')
+const WeaponAdd = () => import('@/view/weapon/WeaponAdd')
 
 
 // 1.通过Vue.use(插件), 安装插件
@@ -21,6 +22,10 @@ const routes = [
     {
         path: '/weapon',
         component: WeaponList,
+    },
+    {
+        path: '/addWeapon',
+        component: WeaponAdd
     }
     // {
     //     path: '/home',

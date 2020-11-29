@@ -11,7 +11,7 @@ export default function request(config) {
         return res.data
     }, error => {
         console.log(error);
-    })
+    });
 
     return instence(config)
 }

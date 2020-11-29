@@ -1,18 +1,36 @@
 <template>
-    <el-container>
+    <el-container style="height: 100%">
         <el-header>
-            <tabs></tabs>
+            <!--导航栏插件-->
+            <main-menu></main-menu>
         </el-header>
-        <el-main>
-            <router-view></router-view>
-        </el-main>
+        <el-container>
+            <el-aside>
+                <!--<div style="height: 100%">-->
+                <left-nav></left-nav>
+                <!--</div>-->
+
+            </el-aside>
+            <el-container>
+                <el-main>
+                    <router-view></router-view>
+                </el-main>
+                <el-footer>
+                    <el-divider></el-divider>
+                    Footer
+                </el-footer>
+            </el-container>
+
+        </el-container>
+
         <!--导航栏插件-->
-
-
     </el-container>
 </template>
 <script>
-    import Tabs from '@/components/Tabs'
+    import MainMenu from 'view/menu/MainMenu.vue'
+    import LeftNav from 'view/nav/LeftNav.vue'
+    import ElContainer from "../../node_modules/element-ui/packages/container/src/main.vue";
+    import ElAside from "../../node_modules/element-ui/packages/aside/src/main.vue";
 
 
     export default {
@@ -22,7 +40,10 @@
         },
         methods: {},
         components: {
-            Tabs
+            ElAside,
+            ElContainer,
+            MainMenu,
+            LeftNav
         }
     }
 </script>
