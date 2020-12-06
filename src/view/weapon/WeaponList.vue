@@ -77,8 +77,14 @@
             addWeapon: function () {
                 this.$router.replace("/addWeapon")
             },
-            showWeaponData: function () {
-                this.$router.replace("/WeaponShow")
+            showWeaponData: function (id) {
+                this.$router.push({
+                    path: "/WeaponShow",
+                    query: {
+                        id: id
+                    }
+                });
+//                this.$router.push("/WeaponShow");
             }
         },
         components: {
