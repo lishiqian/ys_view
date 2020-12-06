@@ -50,7 +50,7 @@
 
 </template>
 <script>
-
+    import request from '@/network/request'
     //    import ElButton from "../../../node_modules/element-ui/packages/button/src/button.vue";
     //    import ElRow from "element-ui/packages/row/src/row";
 
