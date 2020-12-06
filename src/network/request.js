@@ -2,7 +2,8 @@ import axios from 'axios'
 
 export default function request(config) {
     var instence = axios.create({
-        baseURL: "http://localhost:8080/api",
+        // baseURL: "http://127.0.0.1:8080/api",
+        baseURL: "/api",
         timeout: 5000
     });
 
